@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900');
+
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+}
+
+div#container{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+div#box{
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+}
+
+@media (min-width: 1025px){
+    body{
+        background: linear-gradient(to bottom, rgba(0,5,10,0.4) 0%,rgba(0,0,0,0) 100%);
+    }
+
+    div#box{
+        width: 30%;
+        padding:30px;
+        box-shadow: 2px 2px 8px -2px rgba(0, 0, 0, 0.15);
+    }
+
+    div#box:before {
+        content: " ";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 7px;
+        left: 8px;
+        background: #fff;
+        z-index: -1;
+        box-shadow: 2px 2px 8px -2px rgba(0, 0, 0, 0.15);
+      }
+    div#box:after {
+        content: " ";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 14px;
+        left: 14px;
+        background: #fff;
+        z-index: -2;
+        box-shadow: 2px 2px 8px -2px rgba(0, 0, 0, 0.15);
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body{
+        background: linear-gradient(to bottom, rgba(0,5,10,0.4) 0%,rgba(0,0,0,0) 100%);
+    }
+
+    div#box{
+        width: 40%;
+        padding:80px;
+        box-shadow: 2px 2px 8px -2px rgba(0, 0, 0, 0.15);
+    }
+
+    div#box:before {
+        content: " ";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 7px;
+        left: 8px;
+        background: #fff;
+        z-index: -1;
+        box-shadow: 2px 2px 8px -2px rgba(0, 0, 0, 0.15);
+      }
+    div#box:after {
+        content: " ";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 14px;
+        left: 14px;
+        background: #fff;
+        z-index: -2;
+        box-shadow: 2px 2px 8px -2px rgba(0, 0, 0, 0.15);
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body{
+        background-color: #fff;
+    }
+    div#box{
+        width: 100%;
+        padding:10px;
+    }
+}
+
+
+
+div#box h1{
+    margin-bottom: 5px;
+}
+
+div#box h1 span.green{
+    color:#25E47A;
+    font-weight: lighter;
+}
+
+div#box p{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+div#box ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top:20px;
+}
+
+div#box ul li{
+    display: inline-flex;
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin:5px;
+}
+
+div#box ul li a{
+    text-decoration: none;
+    color:#333;
+}
+
+a.blog-link{
+    text-decoration: none;
+    padding:8px 14px;
+    background-color: #25E47A;
+    color:#333;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
